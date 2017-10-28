@@ -13,7 +13,7 @@ export default class Projects extends Component {
 
 	componentDidMount() {
 		$.ajax({
-			url: "https://raw.githubusercontent.com/trangtmtran/portfolio/master/projects.json",
+			url: "https://raw.githubusercontent.com/trangtmtran/portfolio-v2/master/public/projects.json",
 			dataType: 'json',
 			success: function(data) {
 				this.setState({projects: data.projects});
