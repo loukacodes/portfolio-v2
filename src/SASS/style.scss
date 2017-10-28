@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Lora|Ubuntu+Mono');
+@import "large-screen";
+
+// import typefaces
+@font-face {
+  font-family: 'Myriad-bold';
+  src: url("./Fonts/MyriadPro-Bold.otf");
+}
+@font-face {
+  font-family: 'Myriad';
+  src: url('./Fonts/MyriadPro-Regular.otf');
+}
+
+//mixin section
+@mixin border-radius($para) {
+  border-radius:$para;
+  -moz-border-radius:$para;
+  -webkit-border-radius:$para;
+  -o-border-radius:$para;
+}
+@mixin transition($para) {
+  -webkit-transition: $para;
+  -moz-transition: $para;
+  -o-transition: $para;
+  transition: $para;
+}
+
+@mixin transition-property($para1,$para2) {
+  -webkit-transition-property: $para1, $para2;
+  -moz-transition-property: $para1, $para2;
+  -o-transition-property: $para1, $para2;
+  transition-property: $para1, $para2;
+}
+
+@mixin transform($para) {
+  -webkit-transform: $para;
+  -moz-transform: $para;
+  -o-transform: $para;
+  transform: $para;
+}
+
+// typefaces
+$lato: 'Lato', sans-serif;
+$lora: 'Lora', serif;
+$myriad-bold: 'Myriad-bold', sans-serif;
+$myriad: 'Myriad', sans-serif;
+
+//colors
+$blue: #4F82C4;
+$turquoise: #12896B;
+$turtle: #368E5F;
+$violet-blue: #253B95;
+$purple: #9A89A0;
+$text-color: #405151;
+$sand: #CFECB4;
+
+$gradient :linear-gradient(to right, $sand, $turquoise);
+
+/*=================== GENERAL STYLE ======================*/
+
+body {
+  font-family: $myriad;
+  font-size: 1.194em;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  color: $text-color;
+  text-align: left;
+  background: lightgrey;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.wrapper {
+  margin: 0 0.5em;
+}
+
+.main-section {
+  text-align: center;
+  margin: 0 auto 3em;
+  .section-title {
+    font-weight: bold;
+    font-size: 3.125em;
+    font-family: $lora;
+    display: inline-block;
+    margin-bottom: 0;
+  }
+}
+
+footer {
+  margin-top: 5em;
+  text-align: center;
+}
+
+.highlight {
+  width: 100%;
+  height: 30px;
+  background: $gradient;
+  position: relative;
+  top: -30px;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+.come-in { //for social media icon
+  @include transform(translateY(200px));
+  animation: come-in 3s ease forwards;
+  &:nth-child(odd) { animation-duration: 1.5s; } /* So they look staggered */
+}
+
+@keyframes come-in {
+  to { transform: translateY(0); }
+}
+
+.turn-right { //for skills bar
+  animation: turn-right .5s ease-in-out forwards;
+}
+
+@keyframes turn-right {
+  0% { width: 0%;}
+
+  100% { width: 100%; }
+}
+
+
+/*=================== HEADER STYLE ======================*/
+.nav-bg {
+  background: rgba($turquoise, .4);
+}
+
+.nav-show {
+  background: rgba($turquoise, .9);
+  box-shadow: 0 1px 2px rgba($blue, .6);
+}
+
+.transition {
+  @include transition(all .5s ease-in-out);
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+.navigation-bar {
+  margin-bottom: 3em;
+  display: flex;
+  ul {
+    margin-left: auto;
+    li {
+      display: inline-block;
+      padding: 0.75em .5em 0;
+      text-transform: uppercase;
+      a {
+        text-decoration: none;
+        color: $sand;
+        height: 0px;
+        padding: 0;
+        &:after {
+          content: '';
+          display: block;
+          width: 0;
+          position: relative;
+          top: -23px;
+          height: 3px;
+          background: $sand;
+          transition: width .3s;
+        }
+        &:hover:after {
+          width: 100%;
+        }
+      
+      }
+    }
+  }
+}
+
+#logo-img {
+  width: 5em;
+  transition: all 2s ease-in-out;
+  animation: fadeIn 2s;
+  position: relative;
+  left: 0.2em;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        left: 50px;
+    }
+    100% {
+        opacity: 1;
+        left: 0;
+        transform: rotate(0deg);
+    }
+}
+
+/*=================== INTRO SECTION ====================*/
+.introduction {
+  margin: auto;
+  text-align: center;
+  .intro-wrapper {
+    display: inline-block;
+    box-shadow: 0 0 5px $turtle;
+    border-radius: 5px;
+    padding: 5em;
+    background: linear-gradient(45deg, lighten($turtle, 20) 50%, $sand 50%);
+    >p:first-child {
+      position: relative;
+      color: $turtle;
+      margin: 1em;
+      letter-spacing: 1em;
+    }
+    .line {
+      width: 80%;
+      height: 3px;
+      margin: auto;
+      background: $turtle;
+      animation: turn-right 2s ease-in-out forwards;
+    }
+    .job-title {
+      font-family: $myriad-bold;
+      font-weight: bold;
+      color: $turtle;
+      font-size: 3.25em; 
+      text-transform: uppercase;
+      transition: all 2s ease-in-out;
+      animation: fadeIn 4s;
+    }
+  }    
+}
+
+/*=================== PROJECTS SECTION ======================*/
+#projects {
+  text-align: right;
+  .project-container {
+    display: flex;
+    flex-wrap: wrap;
+    .card {
+      max-width: 20vw;
+      min-width: 250px;
+      text-align: left;
+      font-size: .75em;
+      background: transparent;
+      @include transform(scale(0.95));
+      transition: all 0.2s ease-in-out;
+      @include border-radius(5px);
+      &:hover {
+        @include transform(scale(1));
+      }
+      .card-image {
+        min-width: 250px;
+        max-width: 20vw;
+        height: 100%;
+        .image-custom {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .card-content {
+        padding: 10px;
+      }
+      .card-title {
+        font-size: 1.194em;
+      }
+      .stack-icon {
+        margin-bottom: 18px;
+        span {
+          margin-right: 3px;
+          border-radius: 5px;
+          padding: 5px;
+        }
+        .html5 {background: rgba(invert($turtle), 0.7);}
+        .css3 {background: rgba(invert($violet-blue), 0.7);}
+        .jquery {background: rgba($turtle, 0.7);}
+        .js {background: rgba($turquoise, 0.7);}
+        .reactjs {background: rgba($sand, 0.7);}
+        .sass {background: invert($turquoise);}
+      }
+      .card-reveal {z-index: 90;}
+      .live {
+        text-decoration: none;
+        color: $turtle;
+        margin-right: 1em;
+      }
+      .github {
+        text-decoration: none;
+        color: $text-color;
+      }
+    }
+  }
+}
+
+/*=================== SKILLS SECTION ======================*/
+.skill-set {
+   width:80%;
+   margin: auto;
+   font-size: 5em;
+   padding: 1em;
+   transition: all 0.2s ease-in-out;
+   i {
+    padding: 10px;
+    box-shadow: 0 0 5px #111;
+    @include border-radius(5px);
+   }
+}
+
+/*=================== ABOUT SECTION ======================*/
+#about {
+  text-align: left;
+  p i {
+    padding-left: 1.75em;
+  }
+  a.resume {
+    color: $sand;
+    background: $turtle;
+    @include border-radius(5px);
+    cursor: pointer;
+    text-decoration: none;
+    padding: 1em;
+    i{
+      position: relative;
+      top: 4px;
+      margin-right: 3px;
+    }
+  }
+}
+
+/*=================== CONTACT SECTION ======================*/
+#contact {
+  h3 {
+    font-size: 1.618em;
+    padding-bottom: 40px;
+    margin: 0;
+  }
+  ul {
+    padding: 0;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    a {
+      li {
+        list-style: none;
+        img {
+          width: 60px;
+          height: 60px;
+        }
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+/*=================== FOOTER SECTION ======================*/
+footer {
+  a {
+    text-decoration: none;
+    color: $turtle;
+    &:hover, &:focus {
+      color: $sand;
+      text-decoration: none;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+@media (min-width: 42em) {
+//introduction
+.introduction .intro-wrapper h1.job-title {font-size: 5em;}
+div.introduction {
+  min-height: 100vh;
+  padding: 30vh 0.5em 0;
+}
+
+//make font-size bigger in large screen
+  #about .section-title,
+  #projects .section-title,
+  #contact .section-title,
+  #skills .section-title {
+    font-size: 5em;
+  }
+  .introduction p {
+    font-size: 2.25em;
+  }
+  h5,p,figcaption, .skill-title, .skill-percentage {
+    font-size: 1.194em;
+  }
+
+  .wrapper {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  div.highlight {
+    top: -60px;
+    height: 60px;
+  }
+
+}
