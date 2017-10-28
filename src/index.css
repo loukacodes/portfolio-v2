@@ -19,6 +19,9 @@
   h5, p, figcaption, .skill-title, .skill-percentage {
     font-size: 1.194em; }
 
+  div.skill-set {
+    font-size: 5em; }
+
   .wrapper {
     padding-left: 10%;
     padding-right: 10%; }
@@ -94,7 +97,7 @@ footer {
     width: 100%; } }
 /*=================== HEADER STYLE ======================*/
 .nav-bg {
-  background: rgba(18, 137, 107, 0.4); }
+  background: rgba(18, 137, 107, 0.6); }
 
 .nav-show {
   background: rgba(18, 137, 107, 0.9);
@@ -184,7 +187,7 @@ footer {
       font-family: "Myriad-bold", sans-serif;
       font-weight: bold;
       color: #368E5F;
-      font-size: 3.25em;
+      font-size: 3em;
       text-transform: uppercase;
       transition: all 2s ease-in-out;
       animation: fadeIn 4s; }
@@ -197,7 +200,7 @@ footer {
     flex-wrap: wrap; }
     #projects .project-container .card {
       max-width: 20vw;
-      min-width: 250px;
+      min-width: 200px;
       text-align: left;
       font-size: .75em;
       background: transparent;
@@ -216,7 +219,7 @@ footer {
         -o-transform: scale(1);
         transform: scale(1); }
       #projects .project-container .card .card-image {
-        min-width: 250px;
+        min-width: 200px;
         max-width: 20vw;
         height: 100%; }
         #projects .project-container .card .card-image .image-custom {
@@ -257,13 +260,14 @@ footer {
 
 /*=================== SKILLS SECTION ======================*/
 .skill-set {
-  width: 80%;
+  width: 100%;
   margin: auto;
-  font-size: 5em;
+  font-size: 3em;
   padding: 1em;
   transition: all 0.2s ease-in-out; }
   .skill-set i {
     padding: 10px;
+    line-height: 2em;
     box-shadow: 0 0 5px #111;
     border-radius: 5px;
     -moz-border-radius: 5px;
