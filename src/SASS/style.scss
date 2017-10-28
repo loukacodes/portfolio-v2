@@ -67,7 +67,6 @@ body {
   color: $text-color;
   text-align: left;
   background: lightgrey;
-  width: 100%;
   min-height: 100vh;
 }
 
@@ -216,7 +215,7 @@ footer {
     display: inline-block;
     box-shadow: 0 0 5px $turtle;
     border-radius: 5px;
-    padding: 5em;
+    padding: 3em;
     background: linear-gradient(45deg, lighten($turtle, 20) 50%, $sand 50%);
     >.name {
       position: relative;

@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Lato|Lora|Ubuntu+Mono");
-@media (min-width: 42em) {
+@media (min-width: 40em) {
   div.introduction {
     min-height: 100vh;
     padding: 30vh 0.5em 0; }
@@ -47,7 +47,6 @@ body {
   color: #405151;
   text-align: left;
   background: lightgrey;
-  width: 100%;
   min-height: 100vh; }
 
 .wrapper {
@@ -172,7 +171,7 @@ footer {
     display: inline-block;
     box-shadow: 0 0 5px #368E5F;
     border-radius: 5px;
-    padding: 5em;
+    padding: 3em;
     background: linear-gradient(45deg, #65c592 50%, #CFECB4 50%); }
     .introduction .intro-wrapper > .name {
       position: relative;
