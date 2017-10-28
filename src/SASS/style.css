@@ -8,35 +8,32 @@
       font-size: 2em; }
     div.introduction .intro-wrapper h1.job-title {
       font-size: 5em; }
-
   #about .section-title,
   #projects .section-title,
   #contact .section-title,
   #skills .section-title {
     font-size: 5em; }
-
   .introduction p {
     font-size: 2.25em; }
-
   h5, p, figcaption, .skill-title, .skill-percentage {
     font-size: 1.194em; }
-
   div.skill-set {
     font-size: 5em; }
-
   .wrapper {
     padding-left: 10%;
     padding-right: 10%; }
-
   div.highlight {
     top: -60px;
     height: 60px; } }
+
 @font-face {
   font-family: 'Myriad-bold';
   src: url("./Fonts/MyriadPro-Bold.otf"); }
+
 @font-face {
   font-family: 'Myriad';
   src: url("./Fonts/MyriadPro-Regular.otf"); }
+
 /*=================== GENERAL STYLE ======================*/
 body {
   font-family: "Myriad", sans-serif;
@@ -88,6 +85,7 @@ footer {
 @keyframes come-in {
   to {
     transform: translateY(0); } }
+
 .turn-right {
   animation: turn-right .5s ease-in-out forwards; }
 
@@ -96,6 +94,7 @@ footer {
     width: 0%; }
   100% {
     width: 100%; } }
+
 /*=================== HEADER STYLE ======================*/
 .nav-bg {
   background: rgba(18, 137, 107, 0.6); }
@@ -155,6 +154,7 @@ footer {
     opacity: 0; }
   100% {
     opacity: 1; } }
+
 @keyframes fadeInRight {
   0% {
     opacity: 0;
@@ -163,6 +163,7 @@ footer {
     opacity: 1;
     left: 0;
     transform: rotate(0deg); } }
+
 /*=================== INTRO SECTION ====================*/
 .introduction {
   margin: 3em auto;
@@ -300,6 +301,7 @@ footer {
   font-size: 1.618em;
   padding-bottom: 40px;
   margin: 0; }
+
 #contact .links {
   padding: 0;
   display: flex;
@@ -322,5 +324,3 @@ footer a {
   footer a:hover, footer a:focus {
     color: #CFECB4;
     text-decoration: none; }
-
-/*# sourceMappingURL=index.css.map */
