@@ -28,33 +28,32 @@ export default class Projects extends Component {
 	render() {
 		
 		projects = this.state.projects;
-		console.log(projects);
 		return (
 			<div className="project-container">
 				{projects.map(function(project, index) {
 					return (
 						<section key={index} id={project.id} className="card hoverable">
-						<div className="card-image waves-effect waves-block waves-light">
-				            <img className="activator image-custom" src={project.img} alt="project-thumbnail"/>
-				          </div>
-				          <div className="card-content">
-				          <span className="card-title activator grey-text text-darken-4">{project.name}<i className="material-icons right">more_vert</i></span>
-				            <div className="stack-icon">
-				            	{project.usedSkills.map(function(skill, i) {
-				            		return (
-				            			<span key={i} className={skill.toLowerCase()}>{skill}</span>
-				            		)
-				            	})}
-				            </div>
-				            <p>
-				              <a href={project.liveDemo} target="_blank" className="live">Live Demo</a>
-				              <a href={project.github} target="_blank" className="github">Github Repo</a>
-				            </p>
-				          </div>
-				          <div className="card-reveal">
-				            <span className="card-title grey-text text-darken-4">{project.name}<i className="material-icons right">close</i></span>
-				            <p>{project.description}</p>
-				          </div>
+							<div className="card-image waves-effect waves-block waves-light">
+				            	<img className="activator image-custom" src={project.img} alt="project-thumbnail"/>
+				          	</div>
+				          	<div className="card-content">
+				          		<span className="card-title activator grey-text text-darken-4">{project.name}<i className="material-icons right">more_vert</i></span>
+					            <div className="stack-icon">
+					            	{project.usedSkills.map(function(skill, i) {
+					            		return (
+					            			<span key={i} className={skill.toLowerCase()}>{skill}</span>
+					            		)
+					            	})}
+					            </div>
+					            <div>
+					                <a href={project.liveDemo} target="_blank" className="live">Live Demo</a>
+					                <a href={project.github} target="_blank" className="github">Github Repo</a>
+					            </div>
+				          	</div>
+				          	<div className="card-reveal">
+				            	<span className="card-title grey-text text-darken-4">{project.name}<i className="material-icons right">close</i></span>
+				            	<p>{project.description}</p>
+				          	</div>
 						</section>
 					)
 				})}
