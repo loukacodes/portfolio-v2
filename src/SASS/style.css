@@ -1,10 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Lato|Lora|Ubuntu+Mono");
 @media (min-width: 42em) {
-  .introduction .intro-wrapper h1.job-title {
-    font-size: 5em; }
   div.introduction {
     min-height: 100vh;
     padding: 30vh 0.5em 0; }
+    div.introduction .intro-wrapper p.name {
+      letter-spacing: 1em;
+      font-size: 2em; }
+    div.introduction .intro-wrapper h1.job-title {
+      font-size: 5em; }
   #about .section-title,
   #projects .section-title,
   #contact .section-title,
@@ -34,10 +37,10 @@
 /*=================== GENERAL STYLE ======================*/
 body {
   font-family: "Myriad", sans-serif;
-  font-size: 1.194em;
+  font-size: 100%/1.6;
   font-weight: 400;
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+  padding: 2em;
   color: #405151;
   text-align: left;
   background: lightgrey;
@@ -164,7 +167,7 @@ footer {
 
 /*=================== INTRO SECTION ====================*/
 .introduction {
-  margin: auto;
+  margin: 3em auto;
   text-align: center; }
   .introduction .intro-wrapper {
     display: inline-block;
@@ -172,11 +175,11 @@ footer {
     border-radius: 5px;
     padding: 5em;
     background: linear-gradient(45deg, #65c592 50%, #CFECB4 50%); }
-    .introduction .intro-wrapper > p:first-child {
+    .introduction .intro-wrapper > .name {
       position: relative;
       color: #368E5F;
-      margin: 1em;
-      letter-spacing: 1em; }
+      font-size: 1.618em;
+      letter-spacing: 0.5em; }
     .introduction .intro-wrapper .line {
       width: 80%;
       height: 3px;
@@ -200,7 +203,7 @@ footer {
     flex-wrap: wrap; }
     #projects .project-container .card {
       max-width: 20vw;
-      min-width: 200px;
+      min-width: 150px;
       text-align: left;
       font-size: .75em;
       background: transparent;
@@ -219,7 +222,7 @@ footer {
         -o-transform: scale(1);
         transform: scale(1); }
       #projects .project-container .card .card-image {
-        min-width: 200px;
+        min-width: 150px;
         max-width: 20vw;
         height: 100%; }
         #projects .project-container .card .card-image .image-custom {

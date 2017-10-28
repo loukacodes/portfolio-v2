@@ -1,9 +1,17 @@
 @media (min-width: 42em) {
 //introduction
-.introduction .intro-wrapper h1.job-title {font-size: 5em;}
 div.introduction {
   min-height: 100vh;
   padding: 30vh 0.5em 0;
+  .intro-wrapper {
+    p.name {
+      letter-spacing: 1em;
+      font-size: 2em;
+    }
+    h1.job-title {
+      font-size: 5em;
+    }
+  }
 }
 
 //make font-size bigger in large screen
