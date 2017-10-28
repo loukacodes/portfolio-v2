@@ -1,0 +1,392 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|Lora|Ubuntu+Mono");
+@media (min-width: 42em) {
+  .introduction h1.job-title {
+    font-size: 5.65em; }
+
+  .introduction h1, .introduction p {
+    padding-left: 25px; }
+
+  div.introduction {
+    min-height: 90vh;
+    padding: 35vh 0.5em 0; }
+
+  #about .section-title,
+  #projects .section-title,
+  #contact .section-title,
+  #skills .section-title {
+    font-size: 5em; }
+
+  .introduction p {
+    font-size: 2.25em; }
+
+  h5, p, figcaption, .skill-title, .skill-percentage {
+    font-size: 1.194em; }
+
+  section#project-weather.card.hoverable,
+  section#project-simon.card.hoverable,
+  section#project-tictactoe.card.hoverable,
+  section#project-calculator.card.hoverable,
+  section#project-pomodoro.card.hoverable,
+  section#project-leaderboard.card.hoverable {
+    width: 25vw; }
+
+  .wrapper {
+    padding-left: 10%;
+    padding-right: 10%; }
+
+  div.highlight {
+    top: -60px;
+    height: 60px; } }
+#title {
+  font-size: 1.5rem;
+  font-weight: 300; }
+
+.icon {
+  font-size: .9rem;
+  display: inline-flex;
+  background: #D8D8D8;
+  border-radius: 3px;
+  margin-right: 5px;
+  margin-bottom: 15px; }
+  .icon span {
+    border-radius: 5px;
+    padding: 3px 5px; }
+
+.react {
+  background: #BAD5F5; }
+  .react span::after {
+    content: "React.js"; }
+
+.express {
+  background: #F2C986; }
+  .express span::after {
+    content: "Express"; }
+
+.node {
+  background: #E1C1C1; }
+  .node span::after {
+    content: "Node.js"; }
+
+.python {
+  background: #EADD86; }
+  .python span::after {
+    content: "Python"; }
+
+.django {
+  background: #AFEAE5; }
+  .django span::after {
+    content: "Django"; }
+
+.card a {
+  padding-right: 15px; }
+
+.github {
+  color: #739150; }
+
+.status {
+  color: #7699C2; }
+
+/*=================== GENERAL STYLE ======================*/
+body {
+  font-family: "Myriad", sans-serif;
+  font-size: 1.194em;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  color: #405151;
+  text-align: left;
+  background: url("../Images/lowpoly.svg");
+  width: 100%;
+  min-height: 100vh; }
+
+.wrapper {
+  margin: 0 0.5em; }
+
+.main-section {
+  text-align: center;
+  margin: 0 auto 3em; }
+  .main-section .section-title {
+    font-weight: bold;
+    font-size: 3.125em;
+    font-family: "Lora", serif;
+    display: inline-block;
+    margin-bottom: 0; }
+
+footer {
+  margin-top: 5em;
+  text-align: center; }
+
+.highlight {
+  width: 100%;
+  height: 30px;
+  background: linear-gradient(to right, #CFECB4, #12896B);
+  position: relative;
+  top: -30px;
+  z-index: -1;
+  opacity: 0.7; }
+
+.come-in {
+  transform: translateY(200px);
+  animation: come-in 3s ease forwards;
+  /* So they look staggered */ }
+  .come-in:nth-child(odd) {
+    animation-duration: 1.5s; }
+
+@keyframes come-in {
+  to {
+    transform: translateY(0); } }
+.turn-right {
+  animation: turn-right .5s ease-in-out forwards; }
+  .turn-right:nth-child(1) {
+    animation-delay: .1s; }
+  .turn-right:nth-child(2) {
+    animation-delay: .2s; }
+  .turn-right:nth-child(3) {
+    animation-delay: .3s; }
+  .turn-right:nth-child(4) {
+    animation-delay: .4s; }
+  .turn-right:nth-child(5) {
+    animation-delay: .5s; }
+  .turn-right:nth-child(6) {
+    animation-delay: .6s; }
+  .turn-right:nth-child(7) {
+    animation-delay: .7s; }
+  .turn-right:nth-child(8) {
+    animation-delay: .8s; }
+
+@keyframes turn-right {
+  0% {
+    transform: translateX(0px); }
+  50% {
+    transform: translateX(35px); }
+  100% {
+    transform: translateX(0px); } }
+/*=================== END OF GENERAL STYLE ======================*/
+/*=================== HEADER STYLE ======================*/
+.nav-bg {
+  background: rgba(18, 137, 107, 0.4); }
+
+.nav-show {
+  background: rgba(18, 137, 107, 0.9);
+  box-shadow: 0 1px 2px rgba(79, 130, 196, 0.6); }
+
+.transition {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; }
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100; }
+
+.navigation-bar {
+  margin-bottom: 3em;
+  display: flex; }
+  .navigation-bar ul {
+    margin-left: auto; }
+    .navigation-bar ul li {
+      display: inline-block;
+      padding: 0.75em .5em 0;
+      text-transform: uppercase; }
+      .navigation-bar ul li a {
+        text-decoration: none;
+        color: #CFECB4;
+        height: 0px;
+        padding: 0; }
+        .navigation-bar ul li a:after {
+          content: '';
+          display: block;
+          width: 0;
+          position: relative;
+          top: -23px;
+          height: 3px;
+          background: #CFECB4;
+          transition: width .3s; }
+        .navigation-bar ul li a:hover:after {
+          width: 100%; }
+
+#logo-img {
+  width: 5em;
+  transition: all 2s ease-in-out;
+  animation: fadeIn 2s;
+  position: relative;
+  left: 0.2em; }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 50px; }
+  100% {
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg); } }
+/*=================== END OF HEADER STYLE ======================*/
+/*=================== INTRO SECTION ======================*/
+.introduction {
+  min-height: 30vh;
+  padding: 20vh 0.5em 0; }
+  .introduction > p:first-child {
+    position: relative;
+    left: 5px;
+    color: #368E5F; }
+  .introduction .job-title {
+    font-family: "Myriad-bold", sans-serif;
+    font-weight: bold;
+    color: #368E5F;
+    font-size: 3.25em;
+    text-transform: uppercase;
+    margin-top: -.3em; }
+
+/*=================== END OF INTRO SECTION ======================*/
+/*=================== PROJECTS SECTION ======================*/
+#projects {
+  width: 100%;
+  text-align: right; }
+  #projects .project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    #projects .project-container .card {
+      text-align: left;
+      font-size: .75em;
+      background: transparent;
+      transform: scale(0.95);
+      transition: all 0.2s ease-in-out; }
+      #projects .project-container .card:hover {
+        transform: scale(1); }
+      #projects .project-container .card .card-content {
+        padding: 10px; }
+      #projects .project-container .card .card-title {
+        font-size: 1.194em; }
+      #projects .project-container .card .stack-icon {
+        margin-bottom: 18px; }
+        #projects .project-container .card .stack-icon span {
+          margin-right: 3px;
+          border-radius: 5px;
+          padding: 5px; }
+        #projects .project-container .card .stack-icon .html5 {
+          background: rgba(201, 113, 160, 0.7); }
+        #projects .project-container .card .stack-icon .css3 {
+          background: rgba(218, 196, 106, 0.7); }
+        #projects .project-container .card .stack-icon .jquery {
+          background: rgba(54, 142, 95, 0.7); }
+        #projects .project-container .card .stack-icon .js {
+          background: rgba(18, 137, 107, 0.7); }
+        #projects .project-container .card .stack-icon .reactjs {
+          background: rgba(207, 236, 180, 0.7); }
+        #projects .project-container .card .stack-icon .sass {
+          background: #ed7694; }
+      #projects .project-container .card .card-reveal {
+        z-index: 90; }
+      #projects .project-container .card .live {
+        text-decoration: none;
+        color: #368E5F; }
+      #projects .project-container .card .github {
+        text-decoration: none;
+        color: #405151; }
+
+/*=================== END OF PROJECTS SECTION ======================*/
+/*=================== SKILLS SECTION ======================*/
+.skill-set {
+  font-size: 7.25em;
+}
+/*#skill-set {
+  width: 80%;
+  margin: auto;
+  padding-top: 30px;
+  height: auto; }
+
+.skill {
+  position: relative;
+  display: block;
+  margin: 0 auto 15px;
+  width: 100%;
+  border-radius: 10px;
+  background: rgba(79, 130, 196, 0.7);
+  box-shadow: inset 0 0 2px rgba(64, 81, 81, 0.5);
+  height: 1.6em;
+  -webkit-transition: 0.4s linear forward;
+  -moz-transition: 0.4s linear forward;
+  -o-transition: 0.4s linear forward;
+  transition: 0.4s linear forward;
+  -webkit-transition-property: width, background-color;
+  -moz-transition-property: width, background-color;
+  -o-transition-property: width, background-color;
+  transition-property: width, background-color; }
+  .skill .skill-title, .skill .skill-percentage {
+    position: absolute;
+    color: #405151;
+    font-weight: bold;
+    font-size: 1em; }
+
+.skill-title {
+  left: 10px;
+  top: 3px;
+  z-index: 99; }
+
+.skillbar-bar {
+  position: absolute;
+  border-radius: 10px;
+  background: linear-gradient(to right, #CFECB4, #12896B);
+  height: 1.6em;
+  width: 0%; }
+
+.skill-percentage {
+  right: 10px;
+  top: 3px; }*/
+
+/*=================== END OF SKILLS SECTION ======================*/
+/*=================== ABOUT SECTION ======================*/
+#about {
+  text-align: left; }
+  #about p i {
+    padding-left: 1.75em; }
+  #about a.resume {
+    color: #CFECB4;
+    background: #368E5F;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 1em; }
+    #about a.resume i {
+      position: relative;
+      top: 4px; }
+
+/*=================== CONTACT SECTION ======================*/
+#contact h3 {
+  font-size: 1.618em;
+  padding-bottom: 40px;
+  margin: 0; }
+#contact ul {
+  padding: 0;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  #contact ul a li {
+    list-style: none; }
+    #contact ul a li img {
+      width: 60px;
+      height: 60px; }
+  #contact ul a:hover {
+    cursor: pointer; }
+
+/*=================== END OF CONTACT SECTION ======================*/
+/*=================== FOOTER SECTION ======================*/
+footer a {
+  text-decoration: none;
+  color: #368E5F; }
+  footer a:hover, footer a:focus {
+    color: #CFECB4;
+    text-decoration: none; }
+
+/*# sourceMappingURL=style.css.map */
