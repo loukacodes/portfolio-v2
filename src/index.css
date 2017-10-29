@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato|Lora|Ubuntu+Mono");
+@import url("https://fonts.googleapis.com/css?family=Lora|Ubuntu+Mono");
 @media (min-width: 40em) {
   div.introduction {
     min-height: 100vh;
@@ -15,6 +15,9 @@
   #skills .section-title {
     font-size: 5em; }
 
+  .main-section > h3.sub-title {
+    font-size: 2.25em; }
+
   .introduction p {
     font-size: 2.25em; }
 
@@ -25,8 +28,8 @@
     font-size: 5em; }
 
   .wrapper {
-    padding-left: 10%;
-    padding-right: 10%; }
+    padding-left: 10vw;
+    padding-right: 10vw; }
 
   div.highlight {
     top: -60px;
@@ -43,10 +46,10 @@ body {
   font-size: 100%/1.6;
   font-weight: 400;
   margin: 0 auto;
-  padding: 2em;
+  padding: 1em;
   color: #405151;
   text-align: left;
-  background: lightgrey;
+  background: #F1FFE7;
   min-height: 100vh; }
 
 .wrapper {
@@ -61,6 +64,8 @@ body {
     font-family: "Lora", serif;
     display: inline-block;
     margin-bottom: 0; }
+  .main-section .sub-title {
+    font-size: 1.918em; }
 
 footer {
   margin-top: 5em;
@@ -240,7 +245,7 @@ footer {
         #projects .project-container .card .stack-icon .html5 {
           background: rgba(201, 113, 160, 0.7); }
         #projects .project-container .card .stack-icon .css3 {
-          background: rgba(218, 196, 106, 0.7); }
+          background: rgba(176, 125, 59, 0.3); }
         #projects .project-container .card .stack-icon .jquery {
           background: rgba(54, 142, 95, 0.7); }
         #projects .project-container .card .stack-icon .js {

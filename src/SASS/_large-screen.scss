@@ -1,4 +1,5 @@
 @media (min-width: 40em) {
+
 //introduction
 div.introduction {
   min-height: 100vh;
@@ -21,6 +22,11 @@ div.introduction {
   #skills .section-title {
     font-size: 5em;
   }
+
+  .main-section>h3.sub-title {
+    font-size: 2.25em;
+  }
+
   .introduction p {
     font-size: 2.25em;
   }
@@ -33,8 +39,8 @@ div.skill-set {
 }
 
   .wrapper {
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 10vw;
+    padding-right: 10vw;
   }
 
   div.highlight {

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato|Lora|Ubuntu+Mono');
+@import url('https://fonts.googleapis.com/css?family=Lora|Ubuntu+Mono');
 @import "large-screen";
 
 // import typefaces
@@ -40,7 +40,6 @@
 }
 
 // typefaces
-$lato: 'Lato', sans-serif;
 $lora: 'Lora', serif;
 $myriad-bold: 'Myriad-bold', sans-serif;
 $myriad: 'Myriad', sans-serif;
@@ -49,10 +48,9 @@ $myriad: 'Myriad', sans-serif;
 $blue: #4F82C4;
 $turquoise: #12896B;
 $turtle: #368E5F;
-$violet-blue: #253B95;
-$purple: #9A89A0;
 $text-color: #405151;
 $sand: #CFECB4;
+$background-color: #F1FFE7;
 
 $gradient :linear-gradient(to right, $sand, $turquoise);
 
@@ -63,10 +61,10 @@ body {
   font-size: 100%/1.6;
   font-weight: 400;
   margin: 0 auto;
-  padding: 2em;
+  padding: 1em;
   color: $text-color;
   text-align: left;
-  background: lightgrey;
+  background: $background-color;
   min-height: 100vh;
 }
 
@@ -83,6 +81,9 @@ body {
     font-family: $lora;
     display: inline-block;
     margin-bottom: 0;
+  }
+  .sub-title {
+    font-size: 1.918em;
   }
 }
 
@@ -284,7 +285,7 @@ footer {
           padding: 5px;
         }
         .html5 {background: rgba(invert($turtle), 0.7);}
-        .css3 {background: rgba(invert($violet-blue), 0.7);}
+        .css3 {background: rgba(invert($blue), 0.3);}
         .jquery {background: rgba($turtle, 0.7);}
         .js {background: rgba($turquoise, 0.7);}
         .reactjs {background: rgba($sand, 0.7);}
