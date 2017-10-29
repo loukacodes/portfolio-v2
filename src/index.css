@@ -170,7 +170,7 @@ footer {
     transform: rotate(0deg); } }
 /*=================== INTRO SECTION ====================*/
 .introduction {
-  margin: 3em auto;
+  margin: 5em auto;
   text-align: center; }
   .introduction .intro-wrapper {
     display: inline-block;
@@ -315,8 +315,8 @@ footer {
     list-style: none;
     margin: 1vw; }
     #contact .links a li img {
-      width: 60px;
-      height: 60px; }
+      width: 50px;
+      height: 50px; }
   #contact .links a:hover {
     cursor: pointer; }
 
