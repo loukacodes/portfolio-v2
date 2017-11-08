@@ -58,7 +58,7 @@ $gradient :linear-gradient(to right, $sand, $turquoise);
 
 body {
   font-family: $myriad;
-  font-size: 100%/1.6;
+  font-size: 1.25em;
   font-weight: 400;
   margin: 0 auto;
   padding: 1em;
@@ -124,29 +124,31 @@ footer {
 
 
 /*=================== HEADER STYLE ======================*/
-.nav-bg {
-  background: rgba($turquoise, .8);
-}
-
-.nav-show {
-  background: rgba($turquoise, .9);
-  box-shadow: 0 1px 2px rgba($blue, .6);
-}
-
 .transition {
-  @include transition(all .5s ease-in-out);
+  @include transition(all .4s ease-in-out);
 }
 
-.fixed {
+.main-heading {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  height: 4em;
   z-index: 100;
-}
-.navigation-bar {
-  margin-bottom: 3em;
   display: flex;
+  background: $turquoise;
+  box-shadow: 3px 3px 3px #ccc;
+}
+
+.logo-wrapper {
+  height: 100%;
+}
+  
+#navigation-bar {
+  background: $turquoise;
+  display: flex;
+  height: 100%;
+  box-shadow: none;
   ul {
     margin-left: auto;
     li {
@@ -163,8 +165,8 @@ footer {
           display: block;
           width: 0;
           position: relative;
-          top: -23px;
-          height: 3px;
+          top: -1rem;
+          height: 5px;
           background: $sand;
           transition: width .3s;
         }
@@ -178,11 +180,11 @@ footer {
 }
 
 #logo-img {
-  width: 5em;
-  transition: all 2s ease-in-out;
-  animation: fadeIn 2s;
+  width: 5rem;
+  transition: all .2s ease-in-out;
   position: relative;
-  left: 0.2em;
+  left: 1rem;
+  top: 1rem;
 }
 
 @keyframes fadeIn {
@@ -213,7 +215,6 @@ footer {
   margin: 5em auto;
   text-align: center;
   .intro-wrapper {
-    display: inline-block;
     box-shadow: 0 0 5px $turtle;
     border-radius: 5px;
     padding: 3em;
@@ -252,7 +253,7 @@ footer {
     flex-wrap: wrap;
     .card {
       max-width: 20vw;
-      min-width: 150px;
+      min-width: 170px;
       text-align: left;
       font-size: .75em;
       background: transparent;
@@ -263,7 +264,7 @@ footer {
         @include transform(scale(1));
       }
       .card-image {
-        min-width: 150px;
+        min-width: 170px;
         max-width: 20vw;
         height: 100%;
         .image-custom {

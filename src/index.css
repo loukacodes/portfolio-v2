@@ -1,5 +1,41 @@
 @import url("https://fonts.googleapis.com/css?family=Lora|Ubuntu+Mono");
-@media (min-width: 40em) {
+@media (min-width: 50em) {
+  body {
+    position: relative;
+    min-height: 100vh; }
+
+  header.main-heading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 100vh;
+    z-index: 100;
+    flex-direction: column; }
+    header.main-heading .logo-wrapper {
+      text-align: center; }
+      header.main-heading .logo-wrapper #logo-img {
+        width: 15rem;
+        height: 10rem; }
+    header.main-heading #navigation-bar {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      text-align: center; }
+      header.main-heading #navigation-bar li {
+        display: block;
+        width: 100%;
+        margin-top: 5rem;
+        padding: 0 2rem; }
+        header.main-heading #navigation-bar li a {
+          font-size: 2.44rem; }
+
+  .wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80%; }
+
   div.introduction {
     min-height: 100vh;
     padding: 30vh 0.5em 0; }
@@ -28,8 +64,8 @@
     font-size: 5em; }
 
   .wrapper {
-    padding-left: 10vw;
-    padding-right: 10vw; }
+    padding-left: 5vw;
+    padding-right: 5vw; }
 
   div.highlight {
     top: -60px;
@@ -43,7 +79,7 @@
 /*=================== GENERAL STYLE ======================*/
 body {
   font-family: "Myriad", sans-serif;
-  font-size: 100%/1.6;
+  font-size: 1.25em;
   font-weight: 400;
   margin: 0 auto;
   padding: 1em;
@@ -102,58 +138,60 @@ footer {
   100% {
     width: 100%; } }
 /*=================== HEADER STYLE ======================*/
-.nav-bg {
-  background: rgba(18, 137, 107, 0.8); }
-
-.nav-show {
-  background: rgba(18, 137, 107, 0.9);
-  box-shadow: 0 1px 2px rgba(79, 130, 196, 0.6); }
-
 .transition {
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out; }
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out; }
 
-.fixed {
+.main-heading {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 100; }
+  height: 4em;
+  z-index: 100;
+  display: flex;
+  background: #12896B;
+  box-shadow: 3px 3px 3px #ccc; }
 
-.navigation-bar {
-  margin-bottom: 3em;
-  display: flex; }
-  .navigation-bar ul {
+.logo-wrapper {
+  height: 100%; }
+
+#navigation-bar {
+  background: #12896B;
+  display: flex;
+  height: 100%;
+  box-shadow: none; }
+  #navigation-bar ul {
     margin-left: auto; }
-    .navigation-bar ul li {
+    #navigation-bar ul li {
       display: inline-block;
       padding: 0.75em .5em 0;
       text-transform: uppercase; }
-      .navigation-bar ul li a {
+      #navigation-bar ul li a {
         text-decoration: none;
         color: #CFECB4;
         height: 0px;
         padding: 0; }
-        .navigation-bar ul li a:after {
+        #navigation-bar ul li a:after {
           content: '';
           display: block;
           width: 0;
           position: relative;
-          top: -23px;
-          height: 3px;
+          top: -1rem;
+          height: 5px;
           background: #CFECB4;
           transition: width .3s; }
-        .navigation-bar ul li a:hover:after {
+        #navigation-bar ul li a:hover:after {
           width: 100%; }
 
 #logo-img {
-  width: 5em;
-  transition: all 2s ease-in-out;
-  animation: fadeIn 2s;
+  width: 5rem;
+  transition: all .2s ease-in-out;
   position: relative;
-  left: 0.2em; }
+  left: 1rem;
+  top: 1rem; }
 
 @keyframes fadeIn {
   0% {
@@ -173,7 +211,6 @@ footer {
   margin: 5em auto;
   text-align: center; }
   .introduction .intro-wrapper {
-    display: inline-block;
     box-shadow: 0 0 5px #368E5F;
     border-radius: 5px;
     padding: 3em;
@@ -207,7 +244,7 @@ footer {
     flex-wrap: wrap; }
     #projects .project-container .card {
       max-width: 20vw;
-      min-width: 150px;
+      min-width: 170px;
       text-align: left;
       font-size: .75em;
       background: transparent;
@@ -226,7 +263,7 @@ footer {
         -o-transform: scale(1);
         transform: scale(1); }
       #projects .project-container .card .card-image {
-        min-width: 150px;
+        min-width: 170px;
         max-width: 20vw;
         height: 100%; }
         #projects .project-container .card .card-image .image-custom {
