@@ -58,7 +58,7 @@ $gradient :linear-gradient(to right, $sand, $turquoise);
 
 body {
   font-family: $myriad;
-  font-size: 1.25em;
+  font-size: 1rem;
   font-weight: 400;
   margin: 0 auto;
   padding: 1em;
@@ -255,7 +255,7 @@ footer {
       max-width: 20vw;
       min-width: 170px;
       text-align: left;
-      font-size: .75em;
+      font-size: .95em;
       background: transparent;
       @include transform(scale(0.95));
       transition: all 0.2s ease-in-out;

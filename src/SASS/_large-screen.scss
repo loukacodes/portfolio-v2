@@ -3,6 +3,7 @@
 body {
   position: relative;
   min-height: 100vh;
+  font-size: 1.25rem;
 }
 
 header.main-heading {
@@ -44,7 +45,7 @@ header.main-heading {
   width: 80%;
 }
 
-//introduction
+/* introduction */
 div.introduction {
   min-height: 100vh;
   padding: 30vh 0.5em 0;
@@ -59,37 +60,38 @@ div.introduction {
   }
 }
 
-//make font-size bigger in large screen
-  #about .section-title,
-  #projects .section-title,
-  #contact .section-title,
-  #skills .section-title {
-    font-size: 5em;
-  }
+/* make font-size bigger in large screen */
+#about .section-title,
+#projects .section-title,
+#contact .section-title,
+#skills .section-title {
+  font-size: 5em;
+}
 
-  .main-section>h3.sub-title {
-    font-size: 2.25em;
-  }
+.main-section>h3.sub-title {
+  font-size: 2.25em;
+}
 
-  .introduction p {
-    font-size: 2.25em;
-  }
-  h5,p,figcaption, .skill-title, .skill-percentage {
-    font-size: 1.194em;
-  }
+.introduction p {
+  font-size: 2.25em;
+}
+
+h5,p,figcaption, .skill-title, .skill-percentage {
+  font-size: 1.194em;
+}
 
 div.skill-set {
   font-size: 5em;
 }
 
-  .wrapper {
-    padding-left: 5vw;
-    padding-right: 5vw;
-  }
+.wrapper {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
 
-  div.highlight {
-    top: -60px;
-    height: 60px;
-  }
+div.highlight {
+  top: -60px;
+  height: 60px;
+}
 
 }

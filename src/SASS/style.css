@@ -2,7 +2,8 @@
 @media (min-width: 50em) {
   body {
     position: relative;
-    min-height: 100vh; }
+    min-height: 100vh;
+    font-size: 1.25rem; }
   header.main-heading {
     position: fixed;
     top: 0;
@@ -33,6 +34,7 @@
     top: 0;
     right: 0;
     width: 80%; }
+  /* introduction */
   div.introduction {
     min-height: 100vh;
     padding: 30vh 0.5em 0; }
@@ -41,6 +43,7 @@
       font-size: 2em; }
     div.introduction .intro-wrapper h1.job-title {
       font-size: 5em; }
+  /* make font-size bigger in large screen */
   #about .section-title,
   #projects .section-title,
   #contact .section-title,
@@ -72,7 +75,7 @@
 /*=================== GENERAL STYLE ======================*/
 body {
   font-family: "Myriad", sans-serif;
-  font-size: 1.25em;
+  font-size: 1rem;
   font-weight: 400;
   margin: 0 auto;
   padding: 1em;
@@ -243,7 +246,7 @@ footer {
       max-width: 20vw;
       min-width: 170px;
       text-align: left;
-      font-size: .75em;
+      font-size: .95em;
       background: transparent;
       -webkit-transform: scale(0.95);
       -moz-transform: scale(0.95);
