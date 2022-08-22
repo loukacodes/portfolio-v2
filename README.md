@@ -2,7 +2,7 @@
 ##### This repo is the second version of my portfolio.
  The aim was to make a clean, readable portfolio site as a way to present current skill set.
  
- [Live Demo](https://trangtmtran.github.io/portfolio-v2)
+ [Live Demo](https://loukacodes.github.io/portfolio-v2)
  
  The main changes in this project is ReactJS has been used to iterate all projects data fetched from projects.json file.
 ```
